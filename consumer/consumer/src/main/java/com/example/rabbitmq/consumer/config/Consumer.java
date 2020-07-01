@@ -15,7 +15,7 @@ public class Consumer {
     public void recievedMessage(String msg) throws IOException {
 
         System.out.println("Message = " + msg);
-        File file = new File("D:\\microservice\\rabbitMq\\file1.txt");
+        File file = new File("/Users/junaidbaig/Desktop/file1.txt");
         FileWriter fr = new FileWriter(file, true);
         BufferedWriter br = new BufferedWriter(fr);
         br.write(newLine+msg);
